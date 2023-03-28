@@ -1,0 +1,1 @@
+A project on Data Structures in Kotlin.This has been implemented with the use of stack inorder to reverse a string. The project uses push, pop and size methods inorder to output the reverse of the string
