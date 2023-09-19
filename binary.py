@@ -1,3 +1,6 @@
+import collections
+
+
 class Node:
     def __init__(self, data):
         self.left = None
@@ -64,6 +67,18 @@ def makeList(r):
         makeList(r.right)
     return d
 
+
+#Breadth first
+
+def bfs(al):
+    queue = collections.deque('g')
+    visited = []
+
+    while queue:
+        node = queue.popleft()
+        visited.append(node)
+        [queue.append(x) for x in al[node]]
+    print(visited)
 
 if __name__ == '__main__':
     root = Node('g')
